@@ -8,9 +8,9 @@ import { StyleSheet, View, StatusBar, Button ,navigate,navigation } from "react-
 import EdtUsername from "../components/EdtUsername";
 import EdtPassword from "../components/EdtPassword";
 import BtnLogin from "../components/BtnLogin";
-import Home from './Home';
+// import Home from './Home';
 
-function Login({navigation}) {
+function Login() {
   // const navigation = useNavigation();
   return (
     <View style={styles.container}>
@@ -23,9 +23,9 @@ function Login({navigation}) {
       
     
       >
-      </BtnLogin>
-<Button title="Login" onPress={()=> navigation.navigate(Home)}       style={styles.materialButtonViolet}
- >texto</Button>
+       </BtnLogin>
+{/* <Button title="Login" onPress={()=> navigation.navigate(Home)}       style={styles.materialButtonViolet} 
+ >texto</Button> */}
       <StatusBar                                  
         animated={false}
         hidden={false}

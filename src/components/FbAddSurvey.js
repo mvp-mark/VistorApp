@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import { useNavigation } from "@react-navigation/native";
 
 function FbAddSurvey(props) {
+  const navigation = useNavigation();
+
   return (
-    <TouchableOpacity style={[styles.container, props.style]}>
+    <TouchableOpacity style={[styles.container, props.style]}
+    onPress={()=> navigation.navigate('Search')} 
+     >
       <Icon name="plus" style={styles.icon}></Icon>
     </TouchableOpacity>
   );

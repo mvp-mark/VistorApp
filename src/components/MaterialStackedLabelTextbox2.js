@@ -28,8 +28,8 @@ const styles = StyleSheet.create({
     flex: 1,
     color: "#000",
     alignSelf: "stretch",
-    paddingTop: 8,
-    paddingBottom: 8,
+    paddingTop: 2,
+    paddingBottom: 2,
     fontSize: 16,
     fontFamily: "roboto-regular",
     lineHeight: 16

@@ -14,12 +14,13 @@ import MaterialStackedLabelTextbox9 from "../components/MaterialStackedLabelText
 function NewSurvey(props) {
   return (
     <View style={styles.container}>
-      <MaterialHeader12 style={styles.materialHeader12}></MaterialHeader12>
+      {/* <MaterialHeader12 style={styles.materialHeader12}></MaterialHeader12> */}
       <View style={styles.rect}>
         <Text style={styles.informacoes}>Informações do Veículo</Text>
       </View>
       <View style={styles.materialStackedLabelTextbox12Row}>
-        <MaterialStackedLabelTextbox1
+        <MaterialStackedLabelTextbox1     editable = {false}
+
           style={styles.materialStackedLabelTextbox12}
         ></MaterialStackedLabelTextbox1>
         <MaterialStackedLabelTextbox3

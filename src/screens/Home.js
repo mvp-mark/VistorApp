@@ -27,7 +27,7 @@ function Home(props) {
           </Svg>
         </View>
         <View style={styles.rect1}></View>
-        <MaterialHeader21 style={styles.materialHeader21}></MaterialHeader21>
+        {/* <MaterialHeader21 style={styles.materialHeader21}></MaterialHeader21> */}
       </View>
       <View style={styles.jxs1RowColumnFiller}></View>
       <FbAddSurvey style={styles.materialButtonShare}></FbAddSurvey>
@@ -47,12 +47,12 @@ const styles = StyleSheet.create({
   jan1: {
     color: "rgba(155,155,155,1)",
     fontFamily: "roboto-regular",
-    marginLeft: 208
+    marginLeft: "auto"
   },
   jxs1Row: {
-    height: 17,
+    height: 20,
     flexDirection: "row",
-    marginTop: 74,
+    marginTop: 8,
     marginLeft: 6,
     marginRight: 9
   },
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   ellipse1: {
     width: 20,
     height: 20,
-    marginLeft: 286
+    marginLeft: "auto"
   },
   fox1Row: {
     height: 20,

@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import { StyleSheet, TouchableOpacity, Text } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 function BtnLogin(props) {
+  const navigation = useNavigation();
+
   return (
-    <TouchableOpacity style={[styles.container, props.style]}>
+    <TouchableOpacity style={[styles.container, props.style]}
+     onPress={()=> navigation.navigate('Home')} 
+     >
       <Text style={styles.caption}>Entrar</Text>
     </TouchableOpacity>
   );

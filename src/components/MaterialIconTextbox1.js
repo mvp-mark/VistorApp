@@ -6,7 +6,11 @@ function MaterialIconTextbox1(props) {
   return (
     <View style={[styles.container, props.style]}>
       <Icon name="calendar" style={styles.iconStyle}></Icon>
-      <TextInput placeholder="Label" style={styles.inputStyle}></TextInput>
+      <TextInput placeholder="Label" style={styles.inputStyle}
+      
+      editable = {false}
+
+      ></TextInput>
     </View>
   );
 }
@@ -26,7 +30,7 @@ const styles = StyleSheet.create({
   inputStyle: {
     flex: 1,
     color: "#000",
-    alignSelf: "stretch",
+    // alignSelf: "stretch",
     marginLeft: 16,
     paddingTop: 14,
     paddingRight: 5,

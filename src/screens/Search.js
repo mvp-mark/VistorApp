@@ -8,7 +8,7 @@ import MaterialButtonViolet2 from "../components/MaterialButtonViolet2";
 function Search(props) {
   return (
     <View style={styles.container}>
-      <MaterialHeader11 style={styles.materialHeader11}></MaterialHeader11>
+      {/* <MaterialHeader11 style={styles.materialHeader11}></MaterialHeader11> */}
       <EdtLicensePlate style={styles.materialMessageTextbox2}></EdtLicensePlate>
       <EdtChassis style={styles.materialMessageTextbox3}></EdtChassis>
       <MaterialButtonViolet2

@@ -5,7 +5,8 @@ function MaterialStackedLabelTextbox4(props) {
   return (
     <View style={[styles.container, props.style]}>
       <Text style={styles.label}>Espécie</Text>
-      <TextInput placeholder="Passageiro" style={styles.inputStyle}></TextInput>
+      <TextInput placeholder="Passageiro" style={styles.inputStyle}     editable = {false}
+></TextInput>
     </View>
   );
 }
@@ -29,8 +30,8 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(15,15, 15,0.07)",
     color: "#000",
     alignSelf: "stretch",
-    paddingTop: 8,
-    paddingBottom: 8,
+    paddingTop: 2,
+    paddingBottom: 2,
     fontSize: 16,
     fontFamily: "roboto-regular",
     lineHeight: 16
