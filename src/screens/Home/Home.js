@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { StyleSheet, View, Text } from "react-native";
 import Svg, { Ellipse } from "react-native-svg";
-import MaterialHeader21 from "../components/MaterialHeader21";
-import FbAddSurvey from "../components/FbAddSurvey";
+import MaterialHeader21 from "../../components/MaterialHeader21";
+import FbAddSurvey from "../../components/Home/FbAddSurvey";
 
 function Home(props) {
   return (

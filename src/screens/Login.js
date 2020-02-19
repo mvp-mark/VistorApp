@@ -5,9 +5,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 
 import { StyleSheet, View, StatusBar, Button ,navigate,navigation } from "react-native";
-import EdtUsername from "../components/EdtUsername";
-import EdtPassword from "../components/EdtPassword";
-import BtnLogin from "../components/BtnLogin";
+import EdtUsername from "../components/Login/EdtUsername";
+import EdtPassword from "../components/Login/EdtPassword";
+import BtnLogin from "../components/Login/BtnLogin";
 // import Home from './Home';
 
 function Login() {
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   },
   materialMessageTextboxStack: {
     height: 171,
-    marginTop: 239,
+    marginTop: "35%",
     marginLeft: 15,
     marginRight: 13
   },

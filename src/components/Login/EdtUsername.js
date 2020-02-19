@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, View, Text, TextInput } from "react-native";
 
-function EdtLicensePlate(props) {
+function EdtUsername(props) {
   return (
     <View style={[styles.container, props.style]}>
       <Text
@@ -16,10 +16,12 @@ function EdtLicensePlate(props) {
           }
         ]}
       >
-        Placa
+        Usuário
       </Text>
       <TextInput
-        placeholder="Digite uma placa..."
+        placeholder="Digite seu Usuário..."
+
+        autoCapitalize="none"
         style={[
           styles.inputStyle,
           {
@@ -96,4 +98,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default EdtLicensePlate;
+export default EdtUsername;

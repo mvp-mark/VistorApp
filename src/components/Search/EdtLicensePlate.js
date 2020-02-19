@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, View, Text, TextInput } from "react-native";
 
-function EdtChassis(props) {
+function EdtLicensePlate(props) {
   return (
     <View style={[styles.container, props.style]}>
       <Text
@@ -16,10 +16,10 @@ function EdtChassis(props) {
           }
         ]}
       >
-        Chassi
+        Placa
       </Text>
       <TextInput
-        placeholder="Digite um chassis..."
+        placeholder="Digite uma placa..."
         style={[
           styles.inputStyle,
           {
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     textAlign: "left"
   },
   inputStyle: {
-    width: 375,
+    width: 'auto',
     flex: 1,
     color: "#000",
     alignSelf: "stretch",
@@ -96,4 +96,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default EdtChassis;
+export default EdtLicensePlate;

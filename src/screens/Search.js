@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
 import MaterialHeader11 from "../components/MaterialHeader11";
-import EdtLicensePlate from "../components/EdtLicensePlate";
-import EdtChassis from "../components/EdtChassis";
-import MaterialButtonViolet2 from "../components/MaterialButtonViolet2";
+import EdtLicensePlate from "../components/Search/EdtLicensePlate";
+import EdtChassis from "../components/Search/EdtChassis";
+import BuscaVistoria from "../components/Search/BuscaVistoria";
 
 function Search(props) {
   return (
@@ -11,34 +11,37 @@ function Search(props) {
       {/* <MaterialHeader11 style={styles.materialHeader11}></MaterialHeader11> */}
       <EdtLicensePlate style={styles.materialMessageTextbox2}></EdtLicensePlate>
       <EdtChassis style={styles.materialMessageTextbox3}></EdtChassis>
-      <MaterialButtonViolet2
+      <BuscaVistoria
         style={styles.materialButtonViolet2}
-      ></MaterialButtonViolet2>
+      ></BuscaVistoria>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    alignSelf: "center"
   },
   materialHeader11: {
-    width: 360,
+    // width: 360,
     height: 56,
     alignSelf: "center"
   },
   materialMessageTextbox2: {
-    width: 342,
+    width: 'auto',
     height: 90,
-    marginTop: 20,
-    marginLeft: 8
+    marginTop: 12,
+    marginLeft: 9,
+    marginRight: 9
   },
   materialMessageTextbox3: {
-    width: 342,
+width: 'auto',
     height: 90,
-    alignSelf: "flex-end",
-    marginTop: 24,
-    marginRight: 9
+    // alignSelf: "flex-end",
+    marginTop: 12,
+    marginRight: 9,
+    marginLeft: 9
   },
   materialButtonViolet2: {
     height: 43,

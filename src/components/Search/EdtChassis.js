@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, View, Text, TextInput } from "react-native";
 
-function EdtUsername(props) {
+function EdtChassis(props) {
   return (
     <View style={[styles.container, props.style]}>
       <Text
@@ -16,10 +16,10 @@ function EdtUsername(props) {
           }
         ]}
       >
-        Usuário
+        Chassi
       </Text>
       <TextInput
-        placeholder="Digite seu Usuário..."
+        placeholder="Digite um chassis..."
         style={[
           styles.inputStyle,
           {
@@ -70,10 +70,10 @@ const styles = StyleSheet.create({
     textAlign: "left"
   },
   inputStyle: {
-    width: 375,
+    width: 'auto',
     flex: 1,
     color: "#000",
-    alignSelf: "stretch",
+    alignSelf: "auto",
     paddingTop: 8,
     paddingBottom: 8,
     borderColor: "#D9D5DC",
@@ -96,4 +96,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default EdtUsername;
+export default EdtChassis;

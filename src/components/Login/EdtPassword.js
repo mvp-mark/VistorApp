@@ -20,6 +20,7 @@ function EdtPassword(props) {
       </Text>
       <TextInput
         placeholder="Digite sua Senha..."
+        secureTextEntry
         style={[
           styles.inputStyle,
           {

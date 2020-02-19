@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { StyleSheet, TouchableOpacity, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-function MaterialButtonViolet2(props) {
+function BuscaVistoria(props) {
   const navigation = useNavigation();
 
   return (
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default MaterialButtonViolet2;
+export default BuscaVistoria;

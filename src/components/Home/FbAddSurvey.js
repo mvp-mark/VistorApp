@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import Icon from "react-native-vector-icons/FontAwesome";
 import { useNavigation } from "@react-navigation/native";
 
 function FbAddSurvey(props) {
@@ -10,7 +10,7 @@ function FbAddSurvey(props) {
     <TouchableOpacity style={[styles.container, props.style]}
     onPress={()=> navigation.navigate('Search')} 
      >
-      <Icon name="plus" style={styles.icon}></Icon>
+      <Icon name="plus"  style={styles.icon}></Icon>
     </TouchableOpacity>
   );
 }
@@ -35,10 +35,10 @@ const styles = StyleSheet.create({
   icon: {
     color: "#fff",
     fontFamily: "Roboto",
-    fontSize: 24,
+    fontSize: 18,
     alignSelf: "center",
-    width: 24,
-    height: 24
+    // width: 24,
+    // height: 24
   }
 });
 
