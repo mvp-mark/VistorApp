@@ -3,8 +3,23 @@ import { StyleSheet, View, Text } from "react-native";
 import Svg, { Ellipse } from "react-native-svg";
 import MaterialHeader21 from "../../components/MaterialHeader21";
 import FbAddSurvey from "../../components/Home/FbAddSurvey";
+import api from '../services/api';
+
 
 function Home(props) {
+  async function loadVistorias() {
+    // const { latitude, longitude } = currentRegion;
+    const [vistorias, setVistorias] = useState([]);
+
+		const response = await api.get('/vistoria', {
+			// params: {
+			// 	latitude,
+			// 	longitude,
+			// 	techs,
+			// },
+    });
+    setVistorias(response.data.vistorias);
+
   return (
     <View style={styles.container}>
       <View style={styles.jxs1RowColumn}>
